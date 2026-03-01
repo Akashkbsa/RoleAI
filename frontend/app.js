@@ -5,7 +5,8 @@
    ============================================================ */
 
 // --- Configuration ---
-const API_BASE = "http://localhost:8000";
+// Auto-detect: use production backend URL if set, otherwise localhost for dev
+const API_BASE = window.RENDER_BACKEND_URL || "http://localhost:8000";
 
 // --- State ---
 let selectedRole = "ceo";
